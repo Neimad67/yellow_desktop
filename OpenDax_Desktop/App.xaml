@@ -1,0 +1,11 @@
+﻿<Application x:Class="OpenDax_Desktop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:OpenDax_Desktop"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="Accent" Color="#FFFDDA16"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
