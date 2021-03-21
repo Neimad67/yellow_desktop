@@ -2,10 +2,15 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:OpenDax_Desktop"
-             StartupUri="MainWindow.xaml">
+             StartupUri="Windows/SplashScreen.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <SolidColorBrush x:Key="Accent" Color="#FFFDDA16"/>
+            <SolidColorBrush x:Key="Gray1" Color="#FF12161C"/>
+            <SolidColorBrush x:Key="Gray2" Color="#FF181A20"/>
+            <SolidColorBrush x:Key="Gray3" Color="#FF1B1D23"/>
+            <SolidColorBrush x:Key="Gray4" Color="#FF2B3139"/>
+            <SolidColorBrush x:Key="WindowBackround" Color="#FF181A20"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

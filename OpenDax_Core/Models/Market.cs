@@ -7,7 +7,7 @@ namespace OpenDax_Core.Models
     {
         public string FullName
         {
-            get => string.Format("{0}/{1}", BaseCurrency, QuoteCurrency);
+            get => string.Format("{0}/{1}", BaseCurrency.ToUpper(), QuoteCurrency.ToUpper());
         }
 
         [JsonProperty("quote_unit")]
@@ -19,22 +19,12 @@ namespace OpenDax_Core.Models
             get;set;
         }
 
-        [JsonIgnore]
-        public bool Enabled
+        public bool IsEnabled
         {
             get => enabled == "enabled";
         }
 
         [JsonProperty("enabled")]
         public string enabled { get; set; } = string.Empty;
-    }
-
-    public class Currency : ICurrency
-    {
-        public string LogoURL => throw new System.NotImplementedException();
-
-        public string Name => throw new System.NotImplementedException();
-
-        public string Id => throw new System.NotImplementedException();
     }
 }

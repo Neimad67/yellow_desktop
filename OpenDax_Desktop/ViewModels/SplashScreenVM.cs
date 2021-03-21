@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using OpenDax_Desktop.Contexts;
+using System.Threading.Tasks;
 
 namespace OpenDax_Desktop.ViewModels
 {
@@ -13,6 +12,11 @@ namespace OpenDax_Desktop.ViewModels
         {
             get => _action;
             private set => _action = value;
+        }
+
+        public async Task InitAsync()
+        {
+            await ExchangeContext.PublicInstace.InitAsync();
         }
     }
 }

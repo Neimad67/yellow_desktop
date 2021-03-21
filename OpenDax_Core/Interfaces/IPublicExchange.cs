@@ -10,6 +10,8 @@ namespace OpenDax_Core.Interfaces
         Task InitAsync();
 
         IList<IMarket> Markets { get; }
+
+        IList<ICurrency> Currencies { get; }
     }
 
     public delegate void OnConnectedHandler();

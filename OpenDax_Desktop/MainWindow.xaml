@@ -7,8 +7,18 @@
         xmlns:sections="clr-namespace:OpenDax_Desktop.Sections"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
+        Background="{DynamicResource WindowBackround}"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+        </Grid>
     </Grid>
 </Window>

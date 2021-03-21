@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OpenDax_Desktop.Windows"
         mc:Ignorable="d"
-        WindowStartupLocation="CenterOwner"
+        WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         xmlns:VM="clr-namespace:OpenDax_Desktop.ViewModels"
+        Loaded="Window_Loaded"
         Title="SplashScreen" 
         Height="450" 
         Width="800">

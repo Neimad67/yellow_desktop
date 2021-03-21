@@ -8,15 +8,6 @@
 
         string BaseCurrency { get; }
 
-        bool Enabled { get; }
-    }
-
-    public interface ICurrency
-    {
-        string LogoURL { get; }
-
-        string Name { get; }
-
-        string Id { get; }
+        bool IsEnabled { get; }
     }
 }
